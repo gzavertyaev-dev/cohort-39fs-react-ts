@@ -1,0 +1,10 @@
+.homework7-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-control {
+  width: 300px;
+}

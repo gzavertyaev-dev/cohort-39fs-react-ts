@@ -1,0 +1,36 @@
+.homework6-wrapper {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 100px;
+  background-color: rgb(11, 11, 48);
+}
+
+.car-card-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 400px;
+  min-height: 150px;
+  max-height: fit-content;
+  padding: 40px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.car-info-container {
+  display: flex;
+  gap: 5px;
+}
+
+.car-info-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.car-info {
+  font-size: 24px;
+  font-weight: 500;
+}
