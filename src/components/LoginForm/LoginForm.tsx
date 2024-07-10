@@ -3,7 +3,7 @@ import { MouseEvent } from "react";
 import Button from "components/Button/Button";
 import Input from "components/Input/Input";
 
-import "./styles.css";
+import { LoginFormContainer, Title, InputsContainer } from "./styles";
 
 function LoginForm() {
   const login = (event: MouseEvent): void => {
@@ -12,9 +12,9 @@ function LoginForm() {
   };
 
   return (
-    <form className="login-form-container">
-      <p className="title">Login form</p>
-      <div className="inputs-container">
+    <LoginFormContainer>
+      <Title>Login form</Title>
+      <InputsContainer>
         <Input
           id="email-id"
           name="email"
@@ -29,9 +29,9 @@ function LoginForm() {
           placeholder="Enter your password"
           label="Password"
         />
-      </div>
+      </InputsContainer>
       <Button onClick={login} name="Login" type="submit" />
-    </form>
+    </LoginFormContainer>
   );
 }
 

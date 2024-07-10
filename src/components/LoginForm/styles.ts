@@ -1,4 +1,6 @@
-.login-form-container {
+import styled from "@emotion/styled";
+
+export const LoginFormContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 590px;
@@ -9,16 +11,16 @@
   border-radius: 4px;
   background-color: white;
   gap: 30px;
-}
+`;
 
-.title {
+export const Title = styled.p`
   color: #000000;
   font-size: 24px;
   font-weight: normal;
-}
+`;
 
-.inputs-container {
+export const InputsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
+`;

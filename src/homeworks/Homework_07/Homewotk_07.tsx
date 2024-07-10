@@ -5,7 +5,7 @@ import SimponsCard from "components/SimponsCard/SimponsCard";
 import Input from "components/Input/Input";
 import Feedback from "components/Feedback/Feedback";
 
-import "./styles.css";
+import { PageWrapper } from "./styles";
 
 function Homework_07() {
   const [like, setLike] = useState<number>(0);
@@ -33,7 +33,7 @@ function Homework_07() {
   };
 
   return (
-    <div className="homework07-wrapper">
+    <PageWrapper>
       <LoginForm />
       {/* Альтернатива: Вместо 5 св-в можно передать 1 - это обьект, в котором буду храниться эти св-ва */}
       {/* <SimponsCard simpsonData={homerSimpson} /> */}
@@ -57,7 +57,7 @@ function Homework_07() {
         onDislike={onDislike}
         resetResults={resetResults}
       />
-    </div>
+    </PageWrapper>
   );
 }
 

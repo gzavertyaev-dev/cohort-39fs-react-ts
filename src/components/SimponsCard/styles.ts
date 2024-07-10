@@ -1,4 +1,6 @@
-.card-wrapper {
+import styled from "@emotion/styled";
+
+export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -7,14 +9,14 @@
   padding: 30px;
   border: 2px solid black;
   border-radius: 8px;
-}
+`;
 
-.card-item {
+export const CardItem = styled.p`
   font-size: 24px;
   font-weight: bold;
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
   width: 100%;
   height: 400px;
-}
+`;

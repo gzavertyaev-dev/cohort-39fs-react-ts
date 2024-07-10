@@ -1,16 +1,21 @@
 import styled from "@emotion/styled";
 
+import { colors } from "styles/colors";
+
 interface StyledButtonProps {
   $isRed?: boolean;
 }
 
-const getButtonColor = (disbled: boolean | undefined, isRed: boolean | undefined) => {
+const getButtonColor = (
+  disbled: boolean | undefined,
+  isRed: boolean | undefined
+) => {
   if (disbled) {
     return "grey";
   } else if (isRed) {
-    return "#D04648";
+    return colors.ERROR;
   } else {
-    return "#1f27f5";
+    return colors.PRIMARY_BLUE;
   }
 };
 
@@ -20,12 +25,11 @@ export const StyledButton = styled("button")<StyledButtonProps>`
   border: none;
   border-radius: 4px;
   font-size: 20px;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   background-color: ${({ disabled, $isRed }) =>
-    getButtonColor(disabled, $isRed)
-    };
-  cursor: ${({disabled}) => disabled ? "not-allowed" : "pointer"};
+    getButtonColor(disabled, $isRed)};
+  cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
 `;
 
 export const ButtonImg = styled("img")`

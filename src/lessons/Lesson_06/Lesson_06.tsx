@@ -1,4 +1,4 @@
-import "./styles.css";
+import { PageWrapper } from "./styles";
 
 function Lesson_06() {
   // 1 тип: string - строковый
@@ -135,7 +135,7 @@ function Lesson_06() {
   type GlobalAnimalProps = {
     isAnimal: boolean;
   };
-//  - мы не можем наследовать типы
+  //  - мы не можем наследовать типы
   type Animal = {
     type: string;
     age: number;
@@ -148,7 +148,7 @@ function Lesson_06() {
   //   speed: string;
   // }
 
-  type GlobalAnimal  = GlobalAnimalProps & Animal;
+  type GlobalAnimal = GlobalAnimalProps & Animal;
 
   const animal1: GlobalAnimal = {
     isAnimal: true,
@@ -164,10 +164,10 @@ function Lesson_06() {
     age: 8,
     color: "orange",
     isWild: true,
-    speed: "74 km/h"
+    speed: "74 km/h",
   };
 
-  return <div className="page_wrapper">Lesson 06</div>;
+  return <PageWrapper>Lesson 06</PageWrapper>;
 }
 
 export default Lesson_06;

@@ -1,13 +1,15 @@
-.homework6-wrapper {
+import styled from "@emotion/styled";
+
+export const PageWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   gap: 40px;
   padding: 100px;
   background-color: rgb(11, 11, 48);
-}
+`;
 
-.car-card-wrapper {
+export const CarCardWrapper = styled.div`
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -18,19 +20,19 @@
   border: 2px solid black;
   border-radius: 4px;
   background-color: white;
-}
+`;
 
-.car-info-container {
+export const CarInfoContainer = styled.div`
   display: flex;
   gap: 5px;
-}
+`;
 
-.car-info-title {
+export const CarInfoTitle = styled.p`
   font-size: 24px;
   font-weight: bold;
-}
+`;
 
-.car-info {
+export const CarInfo = styled.p`
   font-size: 24px;
   font-weight: 500;
-}
+`;

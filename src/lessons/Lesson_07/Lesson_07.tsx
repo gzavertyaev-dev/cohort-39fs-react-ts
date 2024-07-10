@@ -4,7 +4,7 @@ import Button from "components/Button/Button";
 import Counter from "components/Counter/Counter";
 
 import { WEATHER_CODES } from "./types";
-import "./styles.css";
+import { PageWrapper, ButtonControl } from "./styles";
 
 // !! Есть 2 основных способа вызова перерендера(обновления) компонента:
 // 1 - изменения state(посредством вызова функции setState())
@@ -123,12 +123,12 @@ function Lesson_07() {
   };
 
   return (
-    <div className="homework7-wrapper">
+    <PageWrapper>
       <Counter count={count} onMinus={onMinus} onPlus={onPlus} />
-      <div className="button-control">
+      <ButtonControl>
         <Button name="Send count" onClick={sendCountToServer} />
-      </div>
-    </div>
+      </ButtonControl>
+    </PageWrapper>
   );
 }
 
