@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-import {colors} from 'styles/colors';
+import { colors } from "styles/colors";
 
 interface StyledInputProps {
   $error: string | undefined;
@@ -43,4 +43,9 @@ export const StyledInput = styled.input<StyledInputProps>`
     color: ${colors.PLACEHOLDER};
     font-size: 16px;
   }
+`;
+
+export const ErrorContainer = styled.div`
+  color: ${colors.ERROR};
+  font-size: 18px;
 `;
