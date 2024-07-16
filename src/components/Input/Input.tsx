@@ -12,7 +12,6 @@ function Input({
   value,
   onChange,
 }: InputProps) {
-  console.log(error)
   return (
     <InputWrapper>
       <InputLabel htmlFor={id}>{label}</InputLabel>
