@@ -10,6 +10,7 @@ import Clients from "pages/EmployeeApp/Clients/Clients";
 import Apple from "pages/EmployeeApp/Clients/Apple/Apple";
 import Google from "pages/EmployeeApp/Clients/Google/Google";
 import Facebook from "pages/EmployeeApp/Clients/Facebook/Facebook";
+import { APP_ROUTES } from "constants/routes";
 
 // Lessons
 import Lesson_06 from "./lessons/Lesson_06/Lesson_06";
@@ -35,15 +36,15 @@ function App() {
       <GlobalStyles />
       {/* <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/login" element={<LogIn />} />
-          <Route path="/clients" element={<Clients />} />
-          <Route path="/clients/apple" element={<Apple />} />
-          <Route path="/clients/facebook" element={<Facebook />} />
-          <Route path="/clients/google" element={<Google />} />
-          <Route path="*" element="Page Not Found!!!" />
+          <Route path={APP_ROUTES.HOME} element={<Home />} />
+          <Route path={APP_ROUTES.ABOUT} element={<About />} />
+          <Route path={APP_ROUTES.COUNTACT_US} element={<ContactUs />} />
+          <Route path={APP_ROUTES.LOGIN} element={<LogIn />} />
+          <Route path={APP_ROUTES.CLIENTS} element={<Clients />} />
+          <Route path={APP_ROUTES.APPLE} element={<Apple />} />
+          <Route path={APP_ROUTES.FACEBOOK} element={<Facebook />} />
+          <Route path={APP_ROUTES.GOOGLE} element={<Google />} />
+          <Route path={APP_ROUTES.NOT_FOUND} element="Page Not Found!!!" />
         </Routes>
       </Layout> */}
       {/* <Consultation_03 /> */}

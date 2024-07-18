@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import { APP_ROUTES } from "constants/routes";
+
 import { PageWrapper, NavContainer, ClientsLink } from "./styles";
 
 function Clients() {
@@ -13,9 +15,9 @@ function Clients() {
   return (
     <PageWrapper>
       <NavContainer>
-        <ClientsLink to="/clients/apple">Apple</ClientsLink>
-        <ClientsLink to="/clients/facebook">Facebook</ClientsLink>
-        <ClientsLink to="/clients/google">Google</ClientsLink>
+        <ClientsLink to={APP_ROUTES.APPLE}>Apple</ClientsLink>
+        <ClientsLink to={APP_ROUTES.FACEBOOK}>Facebook</ClientsLink>
+        <ClientsLink to={APP_ROUTES.GOOGLE}>Google</ClientsLink>
       </NavContainer>
     </PageWrapper>
   );
